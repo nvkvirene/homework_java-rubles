@@ -1,19 +1,19 @@
 public class Main {
     public static void main(String[] args) {
 
-        int naSchetu = 330;
-        int summaPopolneniya = 1369;
+        int balance = 330;
+        int replenishmentAmount = 1_369;
 
-        int summaBonusa;
-        if (summaPopolneniya >= 1100) {
-            summaBonusa = summaPopolneniya / 100;
+        int bonus;
+        if (replenishmentAmount >= 1_100) {
+            bonus = replenishmentAmount / 100;
         } else {
-            summaBonusa = 0;
+            bonus = 0;
         }
 
-        int obshchiySchet = naSchetu + summaPopolneniya;
+        int totalScore = balance + replenishmentAmount;
 
-        System.out.println(obshchiySchet + " Итоговый счет");
-        System.out.println(summaBonusa + " Количество бонусных рублей");
+        System.out.println(totalScore + " Итоговый счет");
+        System.out.println(bonus + " Количество бонусных рублей");
     }
 }
